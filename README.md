@@ -18,12 +18,14 @@ The dataset for this project is sourced from Ulta Skincare Reviews. It consists 
 
 # Data Preprocessing, Visualization and Exploratory Data Analysis (EDA)
 Here are some details about the dataset:
-  • It has 4150 entries, which refers to the total number of rows in the dataset.
-  • It has 16 columns. These columns contain features or attributes of the data points.
+
+• It has 4150 entries, which refers to the total number of rows in the dataset.
+• It has 16 columns. These columns contain features or attributes of the data points.
   
 The output shows the data type of each column. There are two integer data types (int64) and eight object data types.
-  • Integer data types are typically used for numerical data.
-  • Object data types are used for non-numerical data such as text strings.
+
+• Integer data types are typically used for numerical data.
+• Object data types are used for non-numerical data such as text strings.
   
 In this dataset, the two integer data types likely represent the “Review_Upvotes” and “Review_Downvotes” columns, while the eight object data types likely represent the text data in the other columns.
 Overall, the information in the screenshot suggests that the dataset likely contains reviews of products, possibly gathered from an online store.
@@ -31,13 +33,13 @@ Overall, the information in the screenshot suggests that the dataset likely cont
 <img width="452" alt="Screenshot 2024-08-14 at 3 56 04 AM" src="https://github.com/user-attachments/assets/926b8f3e-5866-4889-bd4b-9bc5ba88d2f9">
 
 Lowercase conversion:
-• This line converts all characters in the ‘Review_Text ’column to lowercase. This is a common data cleaning step because it can help improve the consistency of the text data and make it easier to process.
+ This line converts all characters in the ‘Review_Text ’column to lowercase. This is a common data cleaning step because it can help improve the consistency of the text data and make it easier to process.
 
 Remove punctuation:
-• This line removes all characters except alphabets and numbers from the text in the ‘Review_Text ’column. This is a common data cleaning step because punctuation marks can add noise to the data and make it more difficult to analyze. The re.sub function is used for regular expression substitution.
+ This line removes all characters except alphabets and numbers from the text in the ‘Review_Text ’column. This is a common data cleaning step because punctuation marks can add noise to the data and make it more difficult to analyze. The re.sub function is used for regular expression substitution.
 
 Tokenization:
-• This line splits the text in the ‘Review_Text ’column into a list of words. This is a common data preprocessing step for NLP tasks. The code likely uses the word_tokenize function from the NLTK library to perform tokenization.
+ This line splits the text in the ‘Review_Text ’column into a list of words. This is a common data preprocessing step for NLP tasks. The code likely uses the word_tokenize function from the NLTK library to perform tokenization.
 
 <img width="558" alt="Screenshot 2024-08-14 at 3 57 10 AM" src="https://github.com/user-attachments/assets/3cbefceb-783c-4c14-8cf6-69968b3fb270">
 
@@ -58,6 +60,7 @@ The graph shows the number of units of four skincare products in stock at a comp
 <img width="725" alt="Screenshot 2024-08-14 at 3 59 41 AM" src="https://github.com/user-attachments/assets/fa4a5d9d-167b-4c2e-abc2-1cc4f8eed916">
 
 The line graph shows the number of upvotes received by four different skincare products. The y-axis shows the number of upvotes and the x-axis shows the product name.
+
   • Daily Microfoliant appears to be the most popular product, with around 1400 upvotes.
   • Multi-Vitamin Thermafoliant, Hydro Masque Exfoliant and Daily Superfoliant all have significantly fewer upvotes,in the range of 200-400 upvotes.
   
@@ -68,6 +71,7 @@ It is important to consider that this graph only shows the upvote count and does
 <img width="861" alt="Screenshot 2024-08-14 at 4 00 44 AM" src="https://github.com/user-attachments/assets/c36ebe7c-957b-4297-adff-96f2213e29a9">
 
 Here’s a breakdown of the graph:
+
   • Daily Microfoliant has the most downvotes, at around 300.
   • Multi-Vitamin Thermafoliant and Hydro Masque Exfoliant have the least downvotes, both around 50.
   • Daily Superfoliant has around 150 downvotes.
@@ -79,6 +83,7 @@ It is important to note that similar to upvotes, downvotes only reflect a portio
 <img width="482" alt="Screenshot 2024-08-14 at 4 01 51 AM" src="https://github.com/user-attachments/assets/4506c908-d82d-45ef-9314-283cb72c55ca">
 
 The image you sent is a bar graph that shows the distribution of verified buyers compared to count buyers for a particular product. The x-axis shows whether the buyer was verified or not ("No" or "Yes") and the y-axis shows the count.
+
   • There are significantly more verified buyers than count buyers. This suggests that verification may be an important factor in making a purchase decision for this product.
 
 
@@ -89,12 +94,13 @@ TextBlob uses a machine learning algorithm to classify the sentiment of text as 
 # Count of Sentiment
 
 The image you sent is a pie chart visualization of the sentiment distribution in a dataset, likely customer reviews [1]. It shows the proportion of positive and negative sentiment reviews. Here’s a breakdown of the information in the chart:
+
   • Positive Sentiment: The chart indicates that 94.7% of the reviews fall under the positive sentiment category.
   • Negative Sentiment: The chart indicates that 5.3% of the reviews fall under the negative sentiment category.
 
 Pie charts are useful for visualizing categorical data where the slices represent proportions of the whole. In this case, the whole is all of the reviews in the dataset, and the slices represent the proportion of positive and negative reviews.
 
-#Conclusion
+# Conclusion
 
 The skincare industry is undergoing rapid expansion, fueled by consumers' increasing interest in skincare products and routines. In this digital age, online reviews play a pivotal role in shaping consumer perceptions and purchasing decisions. Understanding the sentiment expressed in these reviews is crucial for both consumers and skincare companies. 
 
